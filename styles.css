@@ -443,7 +443,7 @@ button
 .shop-item:hover
 {
 	transition: all 0.1s cubic-bezier(0, 0, 0.2, 1) 0.1s;
-	background-color: rgba(113, 113, 113, 0.1);
+	background-color: rgba(113, 113, 113, 0.6);
 	color: white;
 }
 
@@ -706,6 +706,11 @@ input:checked + .slider:before
 	color: white;
 }
 
+.footer-nav a:hover
+{
+	color: rgb(175, 175, 175);
+	cursor: pointer;
+}
 
 /*--------------------------------------------------------------Test Environment---------------------------------------------------------------------------*/
 
