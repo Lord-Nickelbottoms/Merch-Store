@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HOME</title>
+
+	<link rel="stylesheet" href="styles.css">
+
+	<!-- This is for the animation library website -->
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+	<script src="script.js" defer></script>
+
+	<!-- Hamburger menu icon -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+	<section class="header-img">
+
+		<header>
+
+			<div class="nav-header">
+
+				<!-- <img class="logo" src="images/logo.svg"> -->
+				<img class="logo" src="/images/logo.png">
+				<nav class="main-nav">
+					<ul>
+						<li><a href="catalog.html">BROWSE CATALOG</a></li>
+						<!-- <li><a href="testEnv.html">Test_Env</a></li> -->
+						<li><a id="accountMgmt">LOG IN</a></li>
+					</ul>
+				</nav>
+
+				<button class="btn-contact">Contact Us</button>
+
+			</div>
+
+			<div class="main-item">
+				<h1 class="welcome-text animate__animated animate__fadeIn animate__delay-0.5s">NEW MERCH AVAILABLE NOW!
+				</h1>
+				<a href="catalog.html"><button role="button"
+						class="btn-new-merch animate__animated animate__fadeIn animate__delay-1s">Take Me
+						There!</button></a>
+			</div>
+
+		</header>
+
+	</section>
+
+	<section id="modal">
+		<form id="log-In-Form">
+
+			<span class="close">&times;</span>
+
+			<h1 style="font-size: 2.6em;" id="log-in-header">Log In</h1>
+
+			<div class="log-container">
+				<label for="userName">Username</label>
+				<input type="text" id="usrName" name="userName" placeholder="Username" required>
+
+
+				<label for="passWord">Password</label>
+				<input type="password" id="passWrd" name="passWord" placeholder="Password" required>
+
+				<button type="button" id="btn-log">Log In</button>
+			</div>
+
+			<p class="registerText">Not yet a member? Click <a id="registerForm">here</a> to register.</p>
+		</form>
+
+	</section>
+
+	<section class="coming-soon-section">
+		<div class="text-display-middle">
+			<h1>COMING SOON</h1>
+			<h2 class="subtitle">Limited Edition merch feat.</h2>
+		</div>
+
+		<div>
+			<img src="images/kimetsu-no-yaiba.svg" style="max-height: 250px; padding: 0; aspect-ratio: 1 / 1;">
+			<h2 id="daysLeft">Test</h2>
+		</div>
+	</section>
+
+	<!--individual boxes to show categories with overlaid text-->
+	<section class="catalog-bg">
+
+		<!-- <img src="images/82v7lt0shr061.jpg" class=""> -->
+
+		<h1 id="catalog-heading">Check Out Our Catalog</h1>
+		<span class="catalog-small">
+
+			<div class="shop-item">
+				<a href="#" class="catalog-link">
+					<span class="shop-item-title">Men's Shoes</span>
+					<img src="images/icons/man-shoe.svg" class="catalog-item-image">
+				</a>
+			</div>
+
+			<div class="shop-item">
+				<a href="#" class="catalog-link">
+					<span class="shop-item-title">Coats & Jackets</span>
+					<img src="images/icons/coat-icon.svg" class="catalog-item-image">
+				</a>
+			</div>
+
+			<div class="shop-item">
+				<a href="#" class="catalog-link">
+					<span class="shop-item-title">T-Shirts</span>
+					<img src="images/icons/t shirt-icon.svg" class="catalog-item-image">
+				</a>
+			</div>
+
+			<div class="shop-item">
+				<a href="#" class="catalog-link">
+					<span class="shop-item-title">Jeans</span>
+					<img src="images/icons/jeans-icon.svg" class="catalog-item-image">
+				</a>
+			</div>
+
+			<div class="shop-item">
+				<a href="#" class="catalog-link">
+					<span class="shop-item-title">Dresses</span>
+					<img src="images/icons/dress-icon.svg" class="catalog-item-image">
+				</a>
+			</div>
+
+			<div class="shop-item">
+				<a href="#" class="catalog-link">
+					<span class="shop-item-title">Women's Shoes</span>
+					<img src="images/icons/woman-boot.svg" class="catalog-item-image">
+				</a>
+			</div>
+
+		</span>
+
+	</section>
+
+	<!-- Footer -->
+	<section class="main-footer">
+		<div class="footer-left-column">
+			<img class="footer-logo" src="images/TEXT_LOGO.png">
+
+			<nav class="footer-nav">
+				<ul>
+					<li>Jobs</li>
+					<li>Customer Support</li>
+					<li>About Us</li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+
+</body>
+
+</html>

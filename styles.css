@@ -1,0 +1,855 @@
+/*Catamaran*/
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap');
+
+/*Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/* Barcode */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap');
+
+/* Bebas Neue */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+*
+{
+	font-family: "Catamaran", sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	width: 100%;
+}
+
+body
+{
+	min-width: 410px;
+}
+
+a
+{
+	text-decoration: none;
+	color: white;
+}
+
+a:hover
+{
+	color: black;
+}
+
+button
+{
+	border-radius: 5px;
+	padding: 10px 15px;
+	cursor: pointer;
+	background-color: transparent;
+	color: white;
+	border: 1px solid white;
+}
+/*---------------------------------------------------------HAMBURGER MENU FOR PHONES AND TABLETS---------------------------------------------------------*/
+@media only screen and (max-width: 539px)
+{
+
+	.header-img
+	{
+		background-position-x: right 82px;
+		background-size: auto;
+	}
+
+	.main-item
+	{
+		max-width: 100%;
+		transform: translateY(211px);
+		background-color: black;
+	}
+}
+
+@media only screen and (min-width: 540px)
+{
+	.main-item
+	{
+		display: inline;
+		float: right;
+		max-width: 188px;
+		transform: translateY(160px) translateX(-26px);
+		background-color: black;
+	}
+}
+
+@media only screen and (min-width: 601px)
+{
+	.main-item
+	{
+		transform: translateY(180px) translateX(-86px);
+		/* translateX(850px); */
+		float: right;
+		max-width: 25%;
+	}
+}
+/*--------------------------------------------------------------------NAV AND FIRST CONTENT--------------------------------------------------------------*/
+.nav-header
+{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 1.2em;
+	padding: 30px 70px 0 10%;
+}
+
+.header-img
+{
+	background: url("images/persona5.png");
+	background-size: cover;
+	width: 100%;
+	background-position: center;
+	height: 900px;
+}
+
+.main-item
+{
+	text-align: center;
+}
+
+.small-heading
+{
+	display: flex;
+	justify-content: center;
+	flex-wrap: nowrap;
+	max-height: 20px;
+	max-width: 40%;
+}
+
+.welcome-text
+{
+	color: white;
+	font-family: "Poppins", sans-serif;
+	font-size: 2.5em;
+	text-align: center;
+}
+
+.main-nav a
+{
+	color: red;
+	text-decoration: none;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+.main-nav li
+{
+	display: inline-block;
+	text-decoration: none;
+}
+
+.main-nav a:hover
+{
+	transition: all 0.1s ease-in 0.1s;
+	color: rgb(255, 255, 255);
+	border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.logo
+{
+	cursor: not-allowed;
+	margin-right: auto;
+	width: 100px;
+}
+
+.btn-contact
+{
+	background-color: transparent;
+	border: 2px solid red;
+	color: red;
+	font-size: 14pt;
+	border-radius: 20px;
+	padding: 5px 20px;
+}
+
+.btn-contact:hover
+{
+	transition: all 0.1s ease-in 0.1s;
+	background-color: rgb(212, 0, 0);
+	color: white;
+}
+
+.btn-new-merch
+{
+	margin-top: 15px;
+	background-color: transparent;
+	border: 1px solid white;
+	color: white;
+	font-size: 1.2em;
+}
+
+.btn-new-merch:hover
+{
+	transition: all 0.1s ease-in 0.1s;
+	background-color: white;
+	color: black;
+	/* padding: 15px 25px; */
+}
+
+/*-------------------------------------------------------HAMBURGER NAV FOR TAB AND MOBILE---------------------------------------------------------------*/
+@media only screen and (max-width: 1024px)
+{
+	.catalog-bg
+	{
+		background-color: antiquewhite;
+		background-image: url('images/973575.jpg');
+		background-size: cover;
+		background-position: right;
+	}
+/* 
+	.navbar
+	{
+		width: 100%;
+	}
+
+	.mobile-container
+	{
+		width: 100%;
+		margin: auto;
+	} */
+
+	/* .nav-container
+	{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 64px;
+	} */
+
+	/* .nav-container
+	{
+		display: block;
+		position: relative;
+		height: 60px;
+	}
+
+	.navbar .menu-items
+	{
+		display: flex;
+	}
+
+	.navbar .nav-container li
+	{
+		list-style: none;
+	}
+
+	.navbar .nav-container a
+	{
+		text-decoration: none;
+		color: red;
+		font-size: 1.3em;
+		padding: 15px;
+	}
+
+	.navbar .nav-container a:hover
+	{
+		color: white;
+		text-decoration: underline;
+	}
+
+	.nav-container .checkbox
+	{
+		display: block;
+		height: 32px;
+		width: 32px;
+		margin-left: auto;
+		margin-top: 40px;
+		z-index: 5;
+		opacity: 0;
+		cursor: pointer;
+	}
+
+	.nav-container .hamburger-icon
+	{
+		height: 26px;
+		width: 32px;
+		margin-left: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.nav-container .hamburger-icon .line
+	{
+		display: block;
+		height: 4px;
+		width: 100%;
+		border-radius: 10px;
+		color: red;
+	}
+
+	.nav-container .hamburger-icon .line1 
+	{
+		transform-origin: 0% 0%;
+		transition: transform 0.4s ease-in-out;
+	}
+
+	.nav-container .hamburger-icon .line2 
+	{
+		transition: transform 0.2s ease-in-out;
+	}	
+
+	.nav-container .hamburger-icon .line3 
+	{
+		transform-origin: 0% 100%;
+		transition: transform 0.4s ease-in-out;
+	}
+
+	.navbar .menu-items 
+	{
+		padding-top: 120px;
+		height: 100vh;
+		width: 100%;
+		transform: translate(-150%);
+		display: flex;
+		flex-direction: column;
+		margin-left: -40px;
+		padding-left: 50px;
+		transition: transform 0.5s ease-in-out;
+		text-align: center;
+	}
+
+	.navbar .menu-items li 
+	{
+		color: red;
+		margin-bottom: 1.2rem;
+		font-size: 1.5rem;
+		font-weight: 500;
+	}
+
+	.nav-container input[type="checkbox"]:checked ~ .menu-items 
+	{
+		transform: translate(0);
+	}
+
+	.nav-container input[type="checkbox"]:checked ~ .hamburger-icon .line1 
+	{
+		transform: rotate(45deg);
+	}
+
+	.nav-container input[type="checkbox"]:checked ~ .hamburger-icon .line2 
+	{
+		transform: scaleY(0);
+	}
+
+	.nav-container input[type="checkbox"]:checked ~ .hamburger-icon .line3 
+	{
+		transform: rotate(-45deg);
+	}
+
+	.nav-container input[type="checkbox"]:checked ~ .logo
+	{
+		display: none;
+	} */
+
+}
+/*-----------------------------------------------------------COMING SOON SECTION------------------------------------------------------------------------*/
+.coming-soon-section
+{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-image: url("images/kimetsu-no-yaiba_2690x2104.jpg");
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	padding: 20px;
+}
+
+.text-display-middle
+{
+	font-size: xx-large;
+	margin: 50px 0;
+	color: white;
+	text-align: center;
+}
+
+.subtitle
+{
+	font-size: x-large;
+}
+
+#daysLeft
+{
+	text-align: center;
+	color: white;
+	font-weight: lighter;
+	font-size: 2.8em;
+	padding-bottom: 30px;
+}
+
+.flavour-text
+{
+	transform: translateX(400px) translateY(250px);
+	font-size: 0.7em;
+}
+
+.line-break::after
+{
+	content: "\A";
+	white-space: pre;
+}
+
+#catalog-heading
+{
+	font-family: "Libre Barcode 39 Text", cursive;
+	padding-top: 50px;
+	text-align: center;
+	font-size: 4em;
+	color: white;
+	font-weight: bolder;
+}
+
+.catalog-small
+{
+	margin: 0px 15%;
+	padding: 30px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(231px, 1fr));
+	justify-items: center;
+	/* display: flex;
+	/* flex-wrap: wrap; */
+}
+
+@media only screen and (min-width: 1024px)
+{
+	.catalog-bg
+	{
+		background-image: url("images/woman-shopping-for-clothes.jpg");
+		height: 100%;
+		color: inherit;
+		position: relative;
+	}
+}
+
+.shop-item
+{
+	text-align: center;
+	align-items: center;
+	margin: 30px 50px;
+	/* border: 1px solid black; */
+	padding: 10px;
+	width: 240px;
+	height: auto;
+	border-radius: 5%;
+}
+
+.shop-item:hover
+{
+	transition: all 0.1s cubic-bezier(0, 0, 0.2, 1) 0.1s;
+	background-color: rgba(113, 113, 113, 0.1);
+	color: white;
+}
+
+.shop-item-title
+{
+	color: white;
+	font-family: 'Bebas Neue', cursive;
+	display: block;
+	text-align: center;
+	width: 100%;
+	font-weight: bolder;
+	padding-bottom: 15px;
+	font-size: 2em;
+	letter-spacing: 2px;
+}
+
+.shop-item a
+{
+	cursor: pointer;
+	text-decoration: none;
+	color: inherit;
+}
+
+.log-header
+{
+	padding-left: 40px;
+	padding-top: 50px;
+	font-size: 1.5em;
+	color: white;
+}
+
+.account-section
+{
+	background-color: rgb(10, 10, 10);
+}
+.container 
+{
+	color: inherit;
+    position: relative;
+	padding: 40px;
+}
+
+/*----------------------------------------------------------------------CATALOG--------------------------------------------------------------------------*/
+label
+{
+	font-size: 0.6em;
+}
+
+.switch 
+{
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+	margin-right: auto;
+	margin-left: 20px;
+}
+
+.switch input 
+{ 
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider 
+{
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.slider:before 
+{
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked + .slider 
+{
+	background-color: #2196F3;
+}
+
+input:focus + .slider 
+{
+	box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before 
+{
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round 
+{
+	border-radius: 34px;
+}
+
+.slider.round:before 
+{
+	border-radius: 50%;
+}
+
+.catalog-nav-header
+{
+	padding: 15px;
+	height: 100px;
+	box-shadow: 0px 1px 5px black;
+}
+
+.catalog-nav a
+{
+	color: black;
+}
+
+.catalog-nav a:hover
+{
+	color: red;
+	border-bottom: 1px solid red;
+}
+
+.logo
+{
+	cursor: pointer;
+	width: 110px;
+	padding-right: 10px;
+}
+
+.cat-container
+{
+	width: 70%;
+	margin: 120px auto;
+	padding: 30px 1.3rem;
+}
+
+.catalog-item
+{
+	margin: 30px;
+	text-align: center;
+	align-items: center;
+	margin: 30px 50px;
+	/* border: 1px solid black; */
+	padding: 10px;
+	width: 280px;
+	height: auto;
+	border-radius: 5%;
+}
+
+.catalog-item-title
+{
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.3em;
+	margin-bottom: 15px;
+	color: black;
+}
+
+.shop-item-image
+{
+	width: 250px;
+	height: 250px;
+	border-radius: 10px;
+}
+
+.shop-item-details
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+	justify-items: center;
+	padding: 5px;
+}
+
+.shop-item-price
+{
+	flex-grow: 1;
+	color: #333;
+}
+
+.shop-items
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.shop-item-button
+{
+	color: black;
+	border: 1px solid black;
+}
+
+.shop-item-button:hover
+{
+	color: white;
+	background-color: black;
+	border: 1px solid white;
+}
+
+/*----------------------------------------------------------------------SEPARATOR------------------------------------------------------------------------*/
+.separator
+{
+	width: 100%;
+	height: 30px;
+	background-color: gray;
+}
+/*----------------------------------------------------------------------FOOTER---------------------------------------------------------------------------*/
+
+.main-footer
+{
+	max-width: 100%;
+	background-color: rgb(20, 20, 20);
+	background-image: url("images/wave.svg");
+	background-size: cover;
+	background-position: center;
+	height: auto;
+
+}
+
+.footer-left-column
+{
+	padding: 2em;
+	margin-right: auto;
+	margin-left: 90px;
+}
+
+
+.footer-logo
+{
+	width: 100px;
+}
+
+.footer-nav li:first-child
+{
+	padding-top: 30px;
+}
+
+.footer-nav li
+{
+	list-style: none;
+	font-size: 1.1em;
+	color: white;
+}
+
+
+/*--------------------------------------------------------------Test Environment---------------------------------------------------------------------------*/
+
+.dark
+{
+	background-color: black;
+	color: white;
+}
+
+
+.section-header
+{
+	margin: 1em;
+	background-color: blue;
+}
+
+
+.cart-header
+{
+	font-size: 2.1em;
+	padding-left: 60px;
+}
+
+.cart
+{
+	font-size: 2.4em;
+	margin: 10px 60px;
+	display: flex;
+}
+
+.cart-column
+{
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
+	font-size: 0.5em;
+	border-bottom: 1px white solid;
+}
+
+.cart-item-column
+{
+	width: 40%;
+}
+
+.cart-price-column
+{
+	width: 15%;
+}
+
+.cart-quantity-column
+{
+	width: 25%;
+}
+
+.cart:last-child
+{
+	margin-right: 0px;
+}
+
+/*--------------------------------------------------------------------LOG IN FORM-------------------------------------------------------------------- */
+#modal
+{
+	display: none; /*to hide the element*/
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	overflow: hidden;
+	background-color: rgba(28, 28, 28, 0.723);
+}
+
+#log-In-Form
+{
+	color: white;
+	background-color: darkslategrey;
+	border: 1px white solid;
+	margin: 150px auto;
+	padding: 40px;
+	text-align: center;
+	max-width: min-content;
+}
+
+.log-container
+{
+	padding: 30px 50px;
+}
+
+.close
+{
+	margin-right: 250px;
+	margin-top: 265px;
+	font-size: 1.6em;
+}
+
+.close:hover, .close:focus
+{
+	color: red;
+	cursor: pointer;
+}
+
+label
+{
+	font-size: larger;
+}
+
+input
+{
+	display: inline-block;
+	background-color: transparent;
+	color: white;
+	padding: 5px 20px;
+	margin: 12px;
+	border: 1px solid white;
+	border-radius: 30px;
+	box-sizing: border-box;
+}
+
+input:hover
+{
+	background-color: rgba(93, 93, 93, 0.524);
+	transition: all 0.1s ease-in 0.1s;
+}
+
+#btn-log:hover
+{
+	background-color: rgb(62, 105, 105);
+	transition: all 0.1s ease-in 0.1s;
+}
+
+#registerText
+{
+	display: inline-block;
+	padding-top: 30px;
+}
+
+#registerForm
+{
+	color: aqua;
+}
+
+#registerForm:hover
+{
+	color: blue;
+	text-decoration: solid;
+	cursor: pointer;
+}
