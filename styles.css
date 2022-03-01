@@ -699,6 +699,23 @@ input:checked + .slider:before
 	padding-top: 30px;
 }
 
+.main-footer p
+{
+	width: 100%;
+	color: white;
+}
+
+p a
+{
+	text-decoration: none;
+	width: 100%;
+}
+
+p a:hover
+{
+	color: rgb(201, 201, 201);
+}
+
 .footer-nav li
 {
 	list-style: none;
